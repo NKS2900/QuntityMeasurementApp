@@ -1,0 +1,255 @@
+.homeContainer{
+    display: flex;
+    height: 90vh;
+    width: 100%;
+    flex-direction: column;
+    background-color: #F0F0F0;
+    background: #F5F6FA 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+#welcomeBar{
+    top: 35px;
+    left: 0px;
+    width: 100%;
+    height: 70px;
+    justify-content: space-around;
+    align-items: center;
+    background: #446DFF 0% 0% no-repeat padding-box;
+    opacity: 1
+}
+
+#chooseType{
+    margin-top: 150px;
+    width: 40%;
+    display: flex;
+    text-align: left;
+    font: normal normal medium 15px/19px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    text-transform: uppercase;
+    opacity: 1;
+    margin-left: 415px;
+}
+
+.cardContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width:45%;
+    margin-left: 400px;
+}
+
+#length{
+    
+    width: 173px;
+    height: 137px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 7px;
+    opacity: 1;
+    display: grid;
+    justify-content: center;
+    
+}
+
+#temperature{
+    width: 173px;
+    height: 137px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 7px;
+    opacity: 1;
+    display: grid;
+    justify-content: center;
+}
+
+#volumn{
+    width: 173px;
+    height: 137px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 7px;
+    opacity: 1;
+    display: grid;
+    justify-content: center;
+}
+
+img{
+    
+   margin-top: 40px;
+   height: 40px;
+} 
+#imgLen {
+    display: flex;
+    justify-content: center;
+}
+
+/* .cardContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width:45%;
+    margin-inline: 10px ;
+    margin-left: 400px;
+
+   
+} */
+
+/* #choseType{
+
+    top: 190px;
+    left: 385px;
+    width: 111px;
+    height: 19px;
+    text-align: left;
+    font: normal normal medium 15px/19px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    text-transform: uppercase;
+    opacity: 1;
+
+}
+
+/* #Length{
+    margin-top: 10px;
+    width: 173px;
+    height: 137px;  
+    display: grid;
+    justify-content: space-around;
+    background: #EDFDF9 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #0EC098;
+    border-radius: 7px;
+    opacity: 1;
+}
+
+#Temperature{
+ 
+  
+    width: 173px;
+    height: 137px;
+    display: grid;
+    justify-content: space-around;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 7px;
+    opacity: 1;
+}
+
+#Volumn{
+ 
+ 
+    width: 173px;
+    height: 137px;
+    display: grid;
+    justify-content: space-around;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 7px;
+    opacity: 1;
+}
+
+
+img{
+
+    align-items: center;
+    margin-top:35px;
+    margin-left: 30px;
+    
+    
+} */
+
+#lengthLabel{
+    
+    width: 56px;
+    height: 19px;
+   
+    text-align: center;
+    font: normal normal bold 15px/19px Montserrat;
+    letter-spacing: 0px;
+    color: #0EC098;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+#temperatureLable{
+    top: 327px;
+    left: 625px;
+    width: 99px;
+    height: 19px;
+    text-align: center;
+    margin-bottom: 10px;
+    font: normal normal medium 15px/19px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    text-transform: capitalize;
+    opacity: 0.50;
+}
+
+#volumeLabel{
+    top: 327px;
+    left: 848px;
+    width: 59px;
+    height: 19px;
+    text-align: center;
+
+    font: normal normal medium 15px/19px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    text-transform: capitalize;
+    opacity: 0.50;
+}
+
+.converterContainer{
+    
+    align-items: center;
+    display: flex;
+    margin-left: 415px;
+    width: 136px;
+    height: 180px;
+    background: #F5F6FA 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+#convertFromContainer
+{
+    
+    left: 450px;
+    width: 260px;
+    height: 80px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E7DCFE;
+    border-radius: 3px;
+    opacity: 1;
+}
+
+.TextField{
+
+    width: 260px;
+    
+}
+.selectID
+{
+    width: 260px;
+    height: 40px;
+}
+#convertToContainer
+{
+    top: 100px;
+    left: 400px;
+    width: 260px;
+    height: 80px;
+    justify-content: grid;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E7DCFE;
+    border-radius: 3px;
+    opacity: 1;
+}
+
+#labelCol1{
+    justify-content: flex;
+    
+}
+#labelCol2{
+    margin-left: 65px;
+    justify-content: flex;
+}
+
