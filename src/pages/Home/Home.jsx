@@ -1,5 +1,5 @@
 import React,{ Component} from 'react';
-import {AppBar,Card, MenuItem,TextField} from '@material-ui/core'
+import {AppBar,Card, MenuItem,TextField,Select} from '@material-ui/core'
 import length from '../../assets/length.png';
 import temperature from '../../assets/temp.png';
 import volumn from '../../assets/volume.png';
@@ -15,6 +15,11 @@ class Home extends Component{
         console.log("length: ",len);
         this.setState({len:event.target.value})
     }
+
+    handleTemp=()=>{
+        this.props.history.push("/temp");
+    }
+    
     render(){
         return(
             <div className="homeContainer">
@@ -33,7 +38,7 @@ class Home extends Component{
                            <label id="lengthLabel"> Length</label>
                         </div>
                         </Card>
-                        <Card id="temperature">
+                        <Card id="temperature" onClick={this.handleTemp}>
                         <div id="imgLen" >
                             <img src={temperature} alt="temperature"/>
                         </div>
@@ -56,7 +61,7 @@ class Home extends Component{
                 <div id="convertFromContainer">
                 <div><TextField className="TextField" type="number" variant="outlined" size="small" ></TextField></div>
                   
-                <select className="selectID" value={this.state.len}onChange={this.handleChange}>
+                <Select className="selectID" value={this.state.len} onChange={this.handleChange}>
                 <MenuItem value=""><em>None</em></MenuItem>
                             <MenuItem value={20}>Kilometre</MenuItem>
                             <MenuItem value={20}>Metres</MenuItem>
@@ -66,7 +71,7 @@ class Home extends Component{
                             <MenuItem value={40}>Mile</MenuItem>
                             <MenuItem value={50}>Foot</MenuItem>
                             <MenuItem value={60}>Inch</MenuItem> 
-                </select>  
+                </Select>  
                 </div>
                 </div>
                 
@@ -74,7 +79,7 @@ class Home extends Component{
                 <label id="select-label">TO</label>
                 <div id="convertToContainer">
                 <div><TextField className="TextField" type="number" variant="outlined" size="small" ></TextField></div>
-                <select className="selectID">
+                <Select className="selectID">
                         <MenuItem value=""><em>None</em></MenuItem>
                         <MenuItem value={20}>Kilometre</MenuItem>
                         <MenuItem value={20}>Metres</MenuItem>
@@ -84,7 +89,7 @@ class Home extends Component{
                         <MenuItem value={40}>Mile</MenuItem>
                         <MenuItem value={50}>Foot</MenuItem>
                         <MenuItem value={60}>Inch</MenuItem>
-                </select>
+                </Select>
                 </div>
                 </div>
             </div>                         

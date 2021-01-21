@@ -1,6 +1,7 @@
 
 import React from 'react';
 import {BrowserRouter as Router,Switch,Route}from 'react-router-dom';
+import Temperature from './components/Length/Temperature/Temperature.jsx';
 import Home from './pages/Home/Home.jsx';
 
 function App() {
@@ -8,7 +9,8 @@ function App() {
       <div>
         <Router>
           <Switch>
-            <Route path="/" component={Home}/>
+            <Route path="/" exact component={Home}/>
+            <Route path="/temp" component={Temperature}/>
           </Switch>
         </Router>
       </div>    
