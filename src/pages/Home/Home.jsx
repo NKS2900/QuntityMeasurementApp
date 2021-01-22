@@ -19,7 +19,15 @@ class Home extends Component{
     handleTemp=()=>{
         this.props.history.push("/temp");
     }
-    
+
+    handleLength=()=>{
+        this.props.history.push("/length");
+    }
+
+    hadleVolume=()=>{
+        this.props.history.push("/volume");
+    }
+
     render(){
         return(
             <div className="homeContainer">
@@ -30,29 +38,23 @@ class Home extends Component{
                         <lable>CHOOSE TYPE</lable>
                     </div> 
             <div className="cardContainer">
-                        <Card id="length">
+                        <Card id="length" onClick={this.handleLength}>
                         <div id="imgLen">
                             <img src={length} alt="length"/>
                         </div>
-                        <div>
                            <label id="lengthLabel"> Length</label>
-                        </div>
                         </Card>
                         <Card id="temperature" onClick={this.handleTemp}>
                         <div id="imgLen" >
                             <img src={temperature} alt="temperature"/>
                         </div>
-                        <div>
                             <label id="temperatureLable"> Temperature</label>
-                        </div>
                         </Card>
-                        <Card id="volumn">
+                        <Card id="volumn" onClick={this.hadleVolume}>
                         <div id="imgLen">
                             <img src={volumn} alt="volumn"/>
                         </div>
-                        <div>
-                            <label id="volumeLabel">Volume</label>
-                        </div>
+                            <label id="volumeLabel"> Volume</label>                     
                         </Card>
                     </div>
             <div className="converterContainer">

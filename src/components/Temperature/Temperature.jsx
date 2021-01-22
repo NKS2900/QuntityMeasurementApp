@@ -1,11 +1,11 @@
 import React,{Component} from 'react';
 import {AppBar,Card, MenuItem,TextField,Select} from '@material-ui/core'
-import length from '../../assets/length.png';
-import temperature from '../../assets/hot.png';
+import length from '../../assets/scale.png';
+import temperature from '../../assets/temp.png';
 import volumn from '../../assets/beaker.png';
-import './length.css';
+import './temperature.css';
 
-class Length extends Component{
+class Temperature extends Component{
     constructor(){
         super();
         this.state={len:''}
@@ -38,23 +38,25 @@ class Length extends Component{
                         <lable>CHOOSE TYPE</lable>
                     </div> 
             <div className="cardContainer">
-                        <Card id="length" onClick={this.handleLength}>
+            <Card id="length" onClick={this.handleLength}>
                         <div id="imgLen">
                             <img src={length} alt="length"/>
                         </div>
-                           <label id="lengthLabel3"> Length</label>
+                        
+                           <label id="lengthLabel2"> Length</label>
+                        
                         </Card>
                         <Card id="temperature" onClick={this.handleTemp}>
                         <div id="imgLen" >
                             <img src={temperature} alt="temperature"/>
                         </div>
-                            <label id="temperatureLable3"> Temperature</label>
+                            <label id="temperatureLable2"> Temperature</label>
                         </Card>
                         <Card id="volumn" onClick={this.hadleVolume}>
                         <div id="imgLen">
                             <img src={volumn} alt="volumn"/>
                         </div>
-                            <label id="volumeLabel3"> Volume</label>                     
+                            <label id="volumeLabel2">Volume</label>                     
                         </Card>
                     </div>
             <div className="converterContainer">
@@ -65,14 +67,9 @@ class Length extends Component{
                   
                 <Select className="selectID" value={this.state.len} onChange={this.handleChange}>
                     <MenuItem value=""><em>None</em></MenuItem>
-                    <MenuItem value={20}>Milimetre</MenuItem>
-                    <MenuItem value={60}>Inch</MenuItem> 
-                    <MenuItem value={20}>Centimetres</MenuItem>
-                    <MenuItem value={10}>Micrometre</MenuItem>
-                    <MenuItem value={50}>Foot</MenuItem>
-                    <MenuItem value={10}>Metres</MenuItem>
-                    <MenuItem value={30}>Kilometre</MenuItem>
-                    <MenuItem value={40}>Mile</MenuItem>                  
+                    <MenuItem value={20}>Celsius</MenuItem>
+                    <MenuItem value={60}>Fahrenheit</MenuItem> 
+                    <MenuItem value={20}>Kelvin</MenuItem>            
                 </Select>  
                 </div>
                 </div>
@@ -83,14 +80,9 @@ class Length extends Component{
                 <div><TextField className="TextField" type="number" variant="outlined" size="small" ></TextField></div>
                 <Select className="selectID">
                         <MenuItem value=""><em>None</em></MenuItem>
-                        <MenuItem value={20}>Kilometre</MenuItem>
-                        <MenuItem value={20}>Metres</MenuItem>
-                        <MenuItem value={10}>Centimetres</MenuItem>
-                        <MenuItem value={30}>Milimetre</MenuItem>
-                        <MenuItem value={10}>Micrometre</MenuItem>
-                        <MenuItem value={40}>Mile</MenuItem>
-                        <MenuItem value={50}>Foot</MenuItem>
-                        <MenuItem value={60}>Inch</MenuItem>
+                        <MenuItem value={20}>Celsius</MenuItem>
+                        <MenuItem value={60}>Fahrenheit</MenuItem> 
+                        <MenuItem value={20}>Kelvin</MenuItem> 
                 </Select>
                 </div>
                 </div>
@@ -100,4 +92,4 @@ class Length extends Component{
     }
 }
 
-export default Length;
+export default Temperature;
