@@ -40,7 +40,7 @@
     margin-left: 400px;
 }
 
-#length{
+#lengthCard{
     
     width: 173px;
     height: 137px;
@@ -51,10 +51,13 @@
     justify-content: center;
     position: relative;
     cursor: pointer;
+    background: #EDFDF9 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #0EC098;
+    border-radius: 7px;
+    opacity: 1;
 }
-#length :hover{
-   border-color: lightgreen;
-}
+
 
 
 #temperature{
@@ -151,6 +154,11 @@ img{
 .TextField{
 
     width: 260px;
+    text-align: left;
+    font: normal normal medium 31px/40px Roboto;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
     
 }
 .selectID
